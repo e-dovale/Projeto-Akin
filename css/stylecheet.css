@@ -16,28 +16,77 @@ header {
     padding: 10px;
 }
 
+
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #fff;
-  }
+}
   
-  .menu li {
+ .menu li {
     float: left;
-  }
+ }
   
-  .menu li a {
+ .menu li a {
     display: block;
     color: #000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+}
   
   /* Change the link color to #111 (black) on hover */
-  .menu li a:hover {
+.menu li a:hover {
     background-color: #111;
     color: #fff;
-  }
+}
+
+  /* CORPO */
+
+h1 {
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    color: #333;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    line-height: 30px;
+    text-align: justify;
+}
+
+main {
+    border: 2px solid #414d40;
+    border-left: none;
+    border-right: none;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 20px;
+    background-color: #fff;
+
+}
+footer p {
+    text-align: center;
+    background-color: #fff;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+footer img{
+    width: 30px;
+}
+
+.social a img {
+    width: 30px;
+}
+
+main p {
+    text-align: center;
+}
+
+.social {
+    
+}
