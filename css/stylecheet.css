@@ -1,88 +1,37 @@
-body{
-    background-image: url("../img/fundo.png")
+body {
+    background-image: url(../img/fundo.png);
+    margin: 0;
 }
 
-header {
-   
-    margin: 13px;
-    padding-left: 30px;
-    padding-right: 30px;
+.banner{
+    background-color: #e70f00a6;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.banner img {
+    width: 600px;
 }
 
-.flex-container{
-    display: flex;
-    justify-content: center;
-    background-color: rgba(231, 8, 8, 0.842);
-    padding: 10px;
-}
-
-
-.menu ul {
+.menu ul{
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 10;
+    text-align: center;
     overflow: hidden;
-    background-color: #fff;
+    background-color: #333;
 }
-  
- .menu li {
-    float: left;
- }
-  
- .menu li a {
-    display: block;
-    color: #000;
+.menu li{
+    display: inline;
+}
+
+.menu a {
+    color: white;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    padding: 14px 50px;
+    text-decoration: double;
 }
-  
-  /* Change the link color to #111 (black) on hover */
-.menu li a:hover {
+
+.menu a:hover {
     background-color: #111;
-    color: #fff;
-}
-
-  /* CORPO */
-
-h1 {
-    color: #333;
-    font-family: Arial, sans-serif;
-}
-
-p {
-    color: #333;
-    font-size: 14px;
-    font-family: Arial, sans-serif;
-    line-height: 30px;
-    text-align: justify;
-}
-
-main {
-    border: 2px solid #414d40;
-    border-left: none;
-    border-right: none;
-    margin-left: 30%;
-    margin-right: 30%;
-    padding: 20px;
-    background-color: #fff;
-
-}
-footer p {
-    text-align: center;
-    background-color: #fff;
-    margin-left: 30%;
-    margin-right: 30%;
-}
-
-footer img{
-    width: 30px;
-}
-
-.social a img {
-    width: 30px;
-}
-
-main p {
-    text-align: center;
 }
