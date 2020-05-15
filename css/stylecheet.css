@@ -1,88 +1,208 @@
-body{
-    background-image: url("../img/fundo.png")
+body {
+    background-image: url(../img/fundo.png);
+    /* margin: 0;  */
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #444;
+    line-height: 25px;
 }
 
-header {
-   
-    margin: 13px;
-    padding-left: 30px;
-    padding-right: 30px;
+/* HEADER */
+.topo {
+    position: sticky;
+    top: 0;
+    /* background-color: rgba(247, 92, 92, 0.993); */
+    padding: 20px;
+    background-color:#da4621;
+    background-image: linear-gradient(rgb(207, 105, 105), rgb(211, 64, 64));
+    margin: 0;
 }
 
-.flex-container{
+.box{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    background-color: rgba(231, 8, 8, 0.842);
-    padding: 10px;
+    
+}
+
+.logo, .login, .pesquisa{
+    width: 33%;
 }
 
 
-.menu ul {
-    list-style-type: none;
+.pesquisa{
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.login p{
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #fff;
 }
-  
- .menu li {
-    float: left;
- }
-  
- .menu li a {
-    display: block;
-    color: #000;
+
+form{
+    margin:0;
+    padding:0;
+    }
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+/* BANNER */
+.banner{
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
 }
-  
-  /* Change the link color to #111 (black) on hover */
-.menu li a:hover {
+
+header img {
+    width: 250px;
+}
+
+
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    text-align: center;
+    overflow: hidden;
+    background-color: #333;
+    font-weight: bold;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+
+.menu li{
+    display: inline;
+}
+
+.menu a {
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: double;
+}
+
+.menu a:hover {
     background-color: #111;
+}
+
+/* PRINCIPAL */
+
+.principal {
+    /* background-color: white; */
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #444;
+    line-height: 25px;
+}
+
+.principal p {
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 30px 50px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #444;
+    line-height: 25px;
+    text-align: justify;
+
+}
+
+.principal h1 {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 30px 50px;
+    font-family: sans-serif;
+    color: #444;
+    text-align: center;
+}
+.principal p img{
+    align-self: center;
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.block {
+    width: calc(100%/3 - 20px);
+    margin: 9px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+}
+
+.block-img {
+    height: calc(((100vw - (100vw - 900px))/3 - 20px) /2);
+}
+
+.block-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.block-desc {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.block-link {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.block-link a {
+    color: #494949;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 0;
+    transition: 0.1s ease;
+}   
+
+.block-link a:hover {
+    background-color: #ccc;
     color: #fff;
 }
 
-  /* CORPO */
-
-h1 {
-    color: #333;
-    font-family: Arial, sans-serif;
-}
-
-p {
-    color: #333;
-    font-size: 14px;
-    font-family: Arial, sans-serif;
-    line-height: 30px;
-    text-align: justify;
-}
-
-main {
-    border: 2px solid #414d40;
+/* FOOTER */
+.rodape{
+    border: 2px solid rgb(250, 4, 4);
     border-left: none;
     border-right: none;
-    margin-left: 30%;
-    margin-right: 30%;
-    padding: 20px;
-    background-color: #fff;
-
-}
-footer p {
-    text-align: center;
-    background-color: #fff;
-    margin-left: 30%;
-    margin-right: 30%;
-}
-
-footer img{
-    width: 30px;
-}
-
-.social a img {
-    width: 30px;
-}
-
-main p {
+    border-bottom: none;
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    padding-bottom: 2px;
     text-align: center;
 }
