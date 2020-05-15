@@ -8,25 +8,67 @@ body {
     line-height: 25px;
 }
 
-header {
+/* HEADER */
+.topo {
     position: sticky;
     top: 0;
+    /* background-color: rgba(247, 92, 92, 0.993); */
+    padding: 20px;
+    background-color:#da4621;
+    background-image: linear-gradient(rgb(207, 105, 105), rgb(211, 64, 64));
+    margin: 0;
 }
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.logo, .login, .pesquisa{
+    width: 33%;
+}
+
+
+.pesquisa{
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.login p{
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    margin:0;
+    padding:0;
+    }
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 
 /* BANNER */
 .banner{
-    background-color: #e70f00a6;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
 }
 
-.banner img {
-    width: 600px;
+header img {
+    width: 250px;
 }
 
 
-header .menu ul{
+.menu ul{
     list-style-type: none;
     margin: 0;
     padding: 10;
@@ -51,20 +93,6 @@ header .menu ul{
 
 .menu a:hover {
     background-color: #111;
-}
-
-/* FOOTER */
-.rodape{
-    border: 2px solid rgb(250, 4, 4);
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    background-color: white;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10px;
-    padding-bottom: 2px;
-    text-align: center;
 }
 
 /* PRINCIPAL */
@@ -165,3 +193,16 @@ header .menu ul{
     color: #fff;
 }
 
+/* FOOTER */
+.rodape{
+    border: 2px solid rgb(250, 4, 4);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    padding-bottom: 2px;
+    text-align: center;
+}
