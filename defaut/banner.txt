@@ -1,0 +1,1 @@
+    document.write('<div class="banner"> <div class="menu">   <nav>         <ul>       <li><a href="index.html">PRODUTOS</a></li>           <li><a href="">MAIS BUSCADOS</a></li>        <li><a href="contato.html">CONTATO</a></li>          <li><a href="sobre.html">SOBRE</a></li><li><a href="quemsomos.html">QUEM SOMOS</a></li></ul></nav></div></div>')

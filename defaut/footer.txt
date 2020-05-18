@@ -1,0 +1,1 @@
+    document.write('<footer class="rodape"><p></p><img src="img/logo-2.png" width="150px"></p><p>Todos os direitos reservados &copy; 2020</p></footer>')

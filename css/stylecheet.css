@@ -23,7 +23,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 
 .logo, .login, .pesquisa{
@@ -186,7 +185,6 @@ header img {
     display: flex;
     flex-direction: column;
     background-color: white;
-
 }
 
 .block-img {
@@ -218,7 +216,7 @@ header img {
     text-transform: uppercase;
     padding: 10px 0;
     transition: 0.1s ease;
-}   
+}
 
 .block-link a:hover {
     background-color: #ccc;
@@ -237,22 +235,183 @@ header img {
 .compras{
     display: flex;
     flex-wrap: nowrap;
-    
+
 }
 
 .figura{
     width: 40%;
-    
+
 }
 
 
+/* PRODUTO */
 
+.compras{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ffffff;
+}
 
+.compras .imagem, .venda{
+    width: 500px;
+}
 
+.compras .descricao{
+    width: 1000px;
+}
 
+.imagem{
+    text-align: center;
+}
 
+.imagem img{
+    width: 80%;
+}
 
+.venda{
+    margin-right: 10px;
+    margin-left: 10px;
+}
 
+.descricao{
+    text-align: center;
+}
+
+hr{
+    margin-bottom: 30px;
+}
+
+.venda h2{
+    color: rgb(238, 48, 14);
+}
+
+.venda p{
+    text-align: left;
+    margin: 0;
+    padding-left: 0px;
+    font-weight: 600;
+
+}
+
+.venda .codigo{
+    font-size: 12px;
+}
+
+.venda .valorRiscado{
+    font-size: 20px;
+    text-decoration: line-through;
+    padding-bottom: 20px;
+}
+
+.venda .valorOriginal{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.venda input[type=number] {
+    /* float: left; */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    text-align: center;
+    border: solid 1px #979090;
+    border-radius: 10px;
+}
+
+.venda input[type=submit] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(rgb(207, 105, 105), rgb(211, 64, 64));
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: -1px;
+    height: 50px;
+}
+
+.venda input[type=submit]:hover{
+    background-image: linear-gradient(rgb(211, 64, 64), rgb(207, 105, 105));
+}
+
+.descricao hr{
+    width: 40%;
+}
+
+.pessoas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.pessoas h1{
+    background-color: aqua;
+}
+.pessoas img{
+    width: 300px;
+    margin: 20px;
+    opacity: 0.5;
+    /* display: initial;
+    position: relative; */
+    border: solid 5px rgba(248, 245, 246, 0);
+    border-radius: 10px;
+    
+ }
+
+ .pessoas img:hover{
+    opacity: 1;
+    border: solid 5px crimson;
+    border-radius: 10px;
+ }
+
+.msgJoao{
+    display: none;
+    align-content: left;
+    background-color: #fff;
+    opacity: 1;
+    text-align: justify;
+    border: solid 5px crimson;
+    border-radius: 10px;
+
+    width: 800px;
+    margin-left: 15%;
+    margin-right: 300px; 
+    padding: 10px;
+}
+
+.msgEdu{
+     display: none;
+     align-content: center;
+     background-color: #fff;
+     opacity: 1;
+     text-align: justify;
+     border: solid 5px crimson;
+     border-radius: 10px;
+     margin-left: 20%;
+     margin-right: 20%;
+     padding: 10px;
+}
+
+.msgVlad{
+     display: none;
+     align-content: center;
+     background-color: #fff;
+     opacity: 1;
+     text-align: justify;
+     border: solid 5px crimson;
+     border-radius: 10px;
+     margin-left: 30%;
+     margin-right: 15%;
+     padding: 10px;
+}
 
 /* FOOTER */
 .rodape{
@@ -264,6 +423,7 @@ header img {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 10px;
-    padding-bottom: 2px;
+    padding-bottom: 1px;
     text-align: center;
+    font-size: 14px;
 }
